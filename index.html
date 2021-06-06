@@ -5,10 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title>Nama by Pamor.in</title>
-    <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 </head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+:root {
+    --bgColor: rgb(255, 255, 255);
+    --accentColor: #5FC9F8;
+    --font: 'Inter', sans-serif;;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+#userPhoto{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+
+#userName{
+    color: var(--accentColor);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#content{
+    max-width: 420px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+    padding: 0 25px;
+}
+
+#footer{
+    max-width: 420px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+    padding: 0 25px;
+}
+
+#ads{
+    max-width: 420px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+    padding: 0 25px;
+}
+
+.social-icon {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.social-icon a {
+    text-decoration:none;
+}
+
+.circulo {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    border-radius: 52px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.circulo:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+.title {
+	display: block;
+    color: var(--accentColor);
+	font-family: var(--font);
+	text-align: center;
+	padding: 17px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.15s;
+}
+
+.link{
+    display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all .25s cubic-bezier(.08,.59,.29,.99);
+    border-radius: 10px;
+}
+
+.link:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+.pic {
+	display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    width: -webkit-fill-available;
+    height: 200px;
+    object-fit: cover;
+	margin-bottom: 20px;
+	transition: all 0.15s;
+    border-radius: 10px;
+}
+
+.embed {
+	display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+    width: -webkit-fill-available;
+    height: 200px;
+    object-fit: cover;
+	margin-bottom: 20px;
+	transition: all 0.15s;
+    border-radius: 10px;
+}
+
+.text {
+	display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+	font-family: var(--font);
+	text-align: justify;
+	margin-bottom: 20px;
+	padding: 17px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.15s;
+    border-radius: 10px;
+}
+
+.text:hover{
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+}
+
+.footer {
+	display: block;
+    background-color: var(--bgColor);
+    color: var(--accentColor);
+	font-family: var(--font);
+	text-align: center;
+	padding: 17px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.15s;
+}
+
+.ads {
+	display: block;
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+	font-family: var(--font);
+	text-align: justify;
+	padding: 17px;
+	text-decoration: none;
+	font-size: 1rem;
+	font-weight: bold;
+	transition: all 0.15s;
+    border-radius: 10px;
+}
+</style>
 
 <body>
     <img id="userPhoto" src="https://i.imgur.com/t8ZX9um.jpg" alt="User Photo">
@@ -34,18 +217,27 @@
         <a class="link" href="#"><i class="fa fa-globe"></i> Loop Tech</a>
         <a class="title">Title Here</a>
         <img class="pic" src="https://i.imgur.com/t8ZX9um.jpg">
+        <iframe class="embed" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
         <a class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</a>
     </div>
     <!-- END MAIN CONTENT -->
 
-    <div id="footer">
-        <a class="footer" href="http://pesoros.com">Powered by Pesoros</a>
-    </div>
     <div id="ads">
         <a class="ads">THIS IS ADS !</a>
     </div>
+    <div id="footer">
+        <a class="footer" href="http://pesoros.com">Powered by Pesoros</a>
+    </div>
     <!-- Javascript -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-    <script  src="js/index.js"></script>
+    <script >
+        $( document ).ready(function() {
+            // Add here commands to run on page loaded
+       });
+       
+       $( ".link" ).click(function() {
+           // Add here commands to run on link click
+       });
+    </script>
 </body>
 </html>

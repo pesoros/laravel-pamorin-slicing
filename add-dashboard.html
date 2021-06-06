@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Nama by Pamor.in</title>
+    <link rel="stylesheet" href="css/admin-style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link href="./vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+</head>
+
+<body>
+
+    <div id="header">
+      <div class="custom-tab-1">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="./add-dashboard.html"><i class="la la-home mr-2"></i>Add</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./edit-dashboard.html"><i class="la la-user mr-2"></i>Edit</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./setting-dashboard.html"><i class="la la-phone mr-2"></i>Setting</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./page-login.html" ><i class="la la-envelope mr-2"></i>Logout</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="content">
+
+      <ul class="nav nav-pills justify-content-center mb-5">
+          <li class=" nav-item">
+              <a href="#navpills2-1" class="nav-link active" data-toggle="tab" aria-expanded="false">Link</a>
+          </li>
+          <li class="nav-item">
+              <a href="#navpills2-2" class="nav-link" data-toggle="tab" aria-expanded="false">Photo</a>
+          </li>
+          <li class="nav-item">
+              <a href="#navpills2-3" class="nav-link" data-toggle="tab" aria-expanded="true">Video</a>
+          </li>
+          <li class="nav-item">
+              <a href="#navpills2-4" class="nav-link" data-toggle="tab" aria-expanded="true">Text</a>
+          </li>
+          <li class="nav-item">
+              <a href="#navpills2-5" class="nav-link" data-toggle="tab" aria-expanded="true">Title</a>
+          </li>
+      </ul>
+      <div class="tab-content">
+          <div id="navpills2-1" class="tab-pane active">
+            <form action="/action_page.php">
+              <div class="basic-form">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                          <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Link</button>
+                          <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Separated link</a>
+                          </div>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Text">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control form-control" type="text" placeholder="Link">
+                    </div>
+                </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div id="navpills2-2" class="tab-pane">
+            <div class="bootstrap-carousel mb-4">
+                <div class="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="https://i.imgur.com/t8ZX9um.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="basic-form custom_file_input">
+              <form action="#">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-primary btn-sm" type="button">Upload</button>
+                    </div>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input">
+                        <label class="custom-file-label">Choose file</label>
+                    </div>
+                </div>
+              </form>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <div id="navpills2-3" class="tab-pane">
+            <form action="/action_page.php">
+              <div class="basic-form">
+                <div class="form-group">
+                  <input class="form-control form-control" type="text" placeholder="Youtube Link">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+          <div id="navpills2-4" class="tab-pane">
+            <div class="basic-form">
+              <form>
+                  <div class="form-group">
+                      <textarea class="form-control" rows="4" id="comment"></textarea>
+                  </div>
+              </form>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <div id="navpills2-5" class="tab-pane">
+            <form action="/action_page.php">
+              <div class="basic-form">
+                <div class="form-group">
+                  <input class="form-control form-control" type="text" placeholder="Title">
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+          </div>
+      </div>
+
+    </div>
+    <!-- END MAIN CONTENT -->
+
+      <div class="copyright mt-5">
+          <p>Pamor.in by <a href="http://pesoros.com/" target="_blank">Pesoros</a></p>
+      </div>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="js/index.js"></script>
+    <script src="./vendor/global/global.min.js"></script>
+	  <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./js/custom.min.js"></script>
+	<script src="./js/deznav-init.js"></script>
+    <script>
+        function mainMenu(evt, mainMenuName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(mainMenuName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+        function subMenu(evt, subMenuName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(subMenuName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>
